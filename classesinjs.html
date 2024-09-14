@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <p id="name"></p>
+    <p id="age"></p>
+    <p id="place"></p>
+    <script>
+     class detail
+        {
+            constructor(n,p)
+            {
+                this.n=n
+                this.p=p
+            }
+            static hello()
+            {
+                return "Hello"
+            }
+            static welcome(x)
+            {
+                return "I am "+x.n
+            }
+            hi()
+            {
+                return "I am in "+this.p
+            }
+        }
+
+        student1=new detail("ROSHITHA M S","Chennai")
+        document.getElementById("name").innerHTML=detail.hello()
+        document.getElementById("age").innerHTML=student1.hi()
+        document.getElementById("place").innerHTML=detail.welcome(student1)
+    </script>
+</body>
+</html>
